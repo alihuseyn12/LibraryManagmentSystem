@@ -1,0 +1,46 @@
+Library Management System
+
+All data must be stored in memory and entered from the console.
+
+Add book
+Remove book
+Show all books
+Sort books
+Search book
+Book analytics
+Exit
+
+1. Add Book
+Read all book information from the console.
+id must be unique.
+If a book with the same id already exists, display an error message.
+
+2. Remove Book
+Remove a book by id.
+If the book does not exist, display an appropriate message.
+
+3. Show All Books
+Display all books in a readable format.
+The order is not important.
+
+4. Sort Books (Ask the user which field to sort by)
+By title (ASC)
+By publication year (DESC)
+By author, then by title (ASC)
+By price (ASC)
+
+5. Search Book (Streams REQUIRED)
+Search by id
+Search by title (partial match)
+Search by author (partial match)
+
+6. Book Analytics (Streams ONLY) (Optional)
+Calculate the average book price.
+Find the most expensive book.
+Find the 3 newest books.
+Count books by author.
+Count books by category.
+
+  Bu tapşırıq Employee Management System ilə eyni çətinlik səviyyəsindədir və
+  ArrayList, Comparator, Stream API, filter, sorted, max, average, limit, collect və
+  digər Java mövzularını işlətmək üçün uyğundur.
