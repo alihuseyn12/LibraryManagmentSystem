@@ -1,11 +1,10 @@
 package Service;
 
-import Controller.ResponseBook;
+import Model.ResponseBook;
 import Model.Book;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class BookServiceImp implements BookService {
 
@@ -39,6 +38,7 @@ public class BookServiceImp implements BookService {
     @Override
     public List<ResponseBook> showAllBooks() {
         return books.stream()
-                .map(n->new ResponseBook(n.getTitle()));
+                .map(n->new ResponseBook(n.getTitle())) deyisikler edecem
+                ;
     }
 }
