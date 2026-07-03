@@ -7,6 +7,10 @@ private String author;
 private Double price;
 private String category;
 
+public Book(){
+    this(null,"unkonwnTitle","unknownAuthor",null,"unkonunCategory");
+}
+
     public Book(Long id, String title, String author, Double price, String category) {
 
         this.id = id;
@@ -56,4 +60,14 @@ private String category;
         this.category = category;
     }
 
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", price=" + price +
+                ", category='" + category + '\'' +
+                '}';
+    }
 }
