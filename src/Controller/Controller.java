@@ -28,21 +28,33 @@ public class Controller {
             int choose = sc.nextInt();
             sc.nextLine();
 
-            if (choose == 1) {
-                System.out.println("Enter BookId:");
-                Long id = sc.nextLong();
+            switch (choose) {
+                case 1:
+                    System.out.println("Enter BookId:");
+                    Long id = sc.nextLong();
+                    sc.nextLine();
+                    System.out.println("Enter BookTitle");
+                    String title = sc.nextLine();
+                    System.out.println("Enter Author");
+                    String author = sc.nextLine();
+                    System.out.println("Enter Price");
+                    Double price = sc.nextDouble();
+                    sc.nextLine();
+                    System.out.println("Enter Category");
+                    String category = sc.nextLine();
+                    Book book = new Book(id, title, author, price, category);
+                    bookService.addBook(book);
+                    break;
+                case 2:
+                var removeId=sc.nextLong();
                 sc.nextLine();
-                System.out.println("Enter BookTitle");
-                String title = sc.nextLine();
-                System.out.println("Enter Author");
-                String author = sc.nextLine();
-                System.out.println("Enter Price");
-                Double price = sc.nextDouble();
-                sc.nextLine();
-                System.out.println("Enter Category");
-                String category = sc.nextLine();
-                Book book = new Book(id, title, author, price, category);
-                bookService.addBook(book);
+                bookService.removeBookById(removeId);
+                    break;
+                case 3:
+                 var result=   bookService.showAllBooks();
+                    System.out.println(result);
+
+                    break;
             }
 
 
